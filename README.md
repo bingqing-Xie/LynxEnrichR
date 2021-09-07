@@ -1,12 +1,14 @@
 # LynxEnrichR
  R based Lynx enrichment tool
-Requested libraries: "httr", "jsonlite"
+ 
+### Install requested libraries: 
+
 `install.packages(c("httr","jsonlite"))`
 
-Usage:
+### Usage:
 
 `enrichResults = get_lynx_enrichment(categories=c("go_bp"), genelist=c("AKT1","CASK","PXN"), tax_id="9606")`
-## enrichResults (output)
+### enrichResults (output)
 
 
 featureId     |  featureName|       pValue| Bonferroni.adjusted.pValue  |  FDR.adjusted.pValue   |    bayesFactor| inQuery| inSearch  |   gene| category|
