@@ -1,9 +1,10 @@
 # LynxEnrichR
- R based Lynx enrichment tool
+ R based Lynx enrichment tool (based on [Lynx: an Integrated Systems Biology Platform](lynx.cri.uchicago.edu/enrichment))
  
 ### Install requested libraries: 
 
 `install.packages(c("httr","jsonlite"))`
+
 
 ### Usage:
 
@@ -43,3 +44,6 @@ GO biological process (MGI) | mmu_go_bp|10040|
 GO cellular component (MGI) |mmu_go_cc|10040|
 GO molecular function (MGI) |mmu_go_mf|10040|
 KEGG (mouse) |mouse_pathway|10040|
+
+### Cite us
+Dinanath Sulakhe, Sandhya Balasubramanian, Bingqing Xie, Bo Feng, Andrew Taylor, Sheng Wang, Eduardo Berrocal, Utpal Dave, Jinbo Xu, Daniela Börnigen, T. Conrad Gilliam, Natalia Maltsev, Lynx: a database and knowledge extraction engine for integrative medicine, Nucleic Acids Research, Volume 42, Issue D1, 1 January 2014, Pages D1007–D1012, https://doi.org/10.1093/nar/gkt1166
