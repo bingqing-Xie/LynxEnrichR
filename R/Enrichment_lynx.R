@@ -16,7 +16,7 @@
 get_lynx_enrichment=function(categories=c("go_bp"),genelist=c("AKT1","CASK","PXN"),tax_id="9606"){
 	finalEnrich_all=c()
 	for(ct in categories){
-		response <- httr::POST("http://lynx.cri.uchicago.edu/gediresources/resources/enrichment/wholegenome/general/post",  httr::accept_json(), body=list(types=ct,correction=0,pcut=1,taxid=tax_id,bcut=0,seeds=paste0(c("",genelist),collapse=":")), encode='form')
+		response <- httr::POST("https://lynx.cri.uchicago.edu/gediresources/resources/enrichment/wholegenome/general/post",  httr::accept_json(), body=list(types=ct,correction=0,pcut=1,taxid=tax_id,bcut=0,seeds=paste0(c("",genelist),collapse=":")), encode='form')
 		#print(response)
 		resChar=rawToChar(response$content)
 		if(resChar!="null"){
